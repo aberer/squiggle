@@ -8,8 +8,6 @@ Xft.rgba:      rgb
 
 
 ! just for clickable links 
-URxvt*perl-ext-common: default,matcher
-URxvt*urlLauncher: conkeror
 URxvt*matcher.button: 2
 ! URxvt*matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
 
@@ -71,3 +69,7 @@ URxvt*color13:     #ec93d3
 URxvt*color14:     #93e0e3
 URxvt*color15:     #ffffff
 !}}}
+
+
+URxvt.font: xft:DejaVu Sans Mono:antialias=true:pixelsize=14
+URxvt.boldFont: xft:DejaVu Sans Mono:style=bold:antialias=true:pixelsize=14
