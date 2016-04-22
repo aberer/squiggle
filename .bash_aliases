@@ -45,6 +45,7 @@ alias bd="popd"
 alias make="make -j2"
 alias dc=cd
 alias sl=ls
+alias ssh='ssh -X'
 
 # TODO: extend
 function absolute_path { echo "$PWD/$1"; }
