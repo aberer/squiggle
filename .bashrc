@@ -56,8 +56,6 @@ set completion-ignore-case on
 # turn off terminal bell
 xset -b
 
-umask u=rwx,g=rwx,o=
-
 export TERM="rxvt"
 export GTEST_COLOR=yes
 export PYTHONPATH=$PYTHONPATH:~/lib
@@ -65,3 +63,19 @@ export PATH=$PATH:/opt/bin/:~/lib
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:~/lib/
 export LC_NUMERIC=C
 export ALTERNATE_EDITOR='emacs --daemon' EDITOR='emacsclient -c' VISUAL='emacsclient -c'
+
+# TODO: meaning of this?
+export LESS="-R $LESS"
+export CC="/usr/bin/ccache gcc"
+export CXX="/usr/bin/ccache g++"
+export EDITOR="emacsclient -c"  VISUAL="emacsclient -c" ALTERNATE_EDITOR=emacs
+
+# source machine local code
+if [ -f ~/.bash_local ]; then
+    . ~/.bash_local
+fi
+
+# TODO: resolution?
+umask 0002
+umask u=rwx,g=rwx,o=
+

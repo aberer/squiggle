@@ -45,3 +45,8 @@ alias bd="popd"
 alias make="make -j2"
 alias dc=cd
 alias sl=ls
+
+# TODO: extend
+function absolute_path { echo "$PWD/$1"; }
+
+alias ap='absolute_path'
