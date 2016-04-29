@@ -21,7 +21,6 @@ HISTFILESIZE=200000
 shopt -s checkwinsize
 shopt -s cdspell
 
-
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
@@ -78,4 +77,3 @@ fi
 # TODO: resolution?
 umask 0002
 umask u=rwx,g=rwx,o=
-
