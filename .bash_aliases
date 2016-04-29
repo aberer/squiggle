@@ -14,11 +14,10 @@ alias l='ls -CF'
 
 function startEmacsIfNotThere
 {
-    if [ "$(pgrep emacs)" == "" ]; then
-	emacs --daemon 
+    if [ $( ps aux | grep -c "emacs.*--daemon" ) -lt 2 ]; then
+        emacs --daemon
     fi
 }
-
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
