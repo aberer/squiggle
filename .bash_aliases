@@ -47,7 +47,15 @@ alias dc=cd
 alias sl=ls
 alias ssh='ssh -X'
 
-# TODO: extend
-function absolute_path { echo "$PWD/$1"; }
+function absolute_path
+{
+    if [ "$(echo $1 | cut -c 1)" == "/"  ]; then
+        arg=$1
+    else
+        arg=$PWD/$1
+    fi
+
+    python -c "import os,sys; print os.path.abspath(sys.argv[1])" $arg
+}
 
 alias ap='absolute_path'
