@@ -59,7 +59,6 @@ export TERM="rxvt"
 export GTEST_COLOR=yes
 export PYTHONPATH=$PYTHONPATH:~/lib
 export PATH=$PATH:/opt/bin/:~/lib
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:~/lib/
 export LC_NUMERIC=C
 export ALTERNATE_EDITOR='emacs --daemon' EDITOR='emacsclient -c' VISUAL='emacsclient -c'
 
