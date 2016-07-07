@@ -62,6 +62,8 @@ export PATH=$PATH:/opt/bin/:~/lib
 export LC_NUMERIC=C
 export ALTERNATE_EDITOR='emacs --daemon' EDITOR='emacsclient -c' VISUAL='emacsclient -c'
 
+export UNCRUSTIFY_CONFIG=~/.uncrustify.cfg
+
 # TODO: meaning of this?
 export LESS="-R $LESS"
 export CC="/usr/bin/ccache gcc"
