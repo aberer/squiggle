@@ -57,8 +57,8 @@ xset -b
 
 export TERM="rxvt"
 export GTEST_COLOR=yes
-export PYTHONPATH=$PYTHONPATH:~/lib
-export PATH=$PATH:/opt/bin/:~/lib
+export PYTHONPATH=$PYTHONPATH:~/lib:~/.local/lib/python2.7/site-packages
+export PATH=$PATH:/opt/bin/
 export LC_NUMERIC=C
 export ALTERNATE_EDITOR='emacs --daemon' EDITOR='emacsclient -c' VISUAL='emacsclient -c'
 
@@ -69,6 +69,7 @@ export LESS="-R $LESS"
 export CC="/usr/bin/ccache gcc"
 export CXX="/usr/bin/ccache g++"
 export EDITOR="emacsclient -c"  VISUAL="emacsclient -c" ALTERNATE_EDITOR=emacs
+export TODAY=$(date +"%Y%m%d")
 
 # source machine local code
 if [ -f ~/.bash_local ]; then

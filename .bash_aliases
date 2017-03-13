@@ -14,7 +14,7 @@ alias l='ls -CF'
 
 function startEmacsIfNotThere
 {
-    if [ $( ps aux | grep -c "emacs.*--daemon" ) -lt 2 ]; then
+    if [ $( ps -u $USER | grep -c "emacs") -lt 1 ]; then
         emacs --daemon
     fi
 }
